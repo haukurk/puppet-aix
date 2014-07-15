@@ -1,0 +1,13 @@
+*** lib/puppet/provider/service/init.rb.orig	Wed Mar 12 09:08:34 2014
+--- lib/puppet/provider/service/init.rb	Wed Mar 12 09:08:45 2014
+***************
+*** 11,16 ****
+--- 11,18 ----
+        "/sbin/init.d"
+      when "Archlinux"
+        "/etc/rc.d"
++     when "AIX"
++       "/etc/rc.d/init.d"
+      else
+        "/etc/init.d"
+      end
